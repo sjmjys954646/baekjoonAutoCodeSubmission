@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT USER_ID, PRODUCT_ID
+FROM ONLINE_SALE
+GROUP BY user_id, product_id
+HAVING COUNT(user_id) >= 2
+ORDER BY USER_ID, PRODUCT_ID desc
